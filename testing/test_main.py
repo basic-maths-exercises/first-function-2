@@ -16,7 +16,7 @@ class UnitTests(unittest.TestCase) :
         inputs, variables = [], []
         for i in range(20) :
             a = np.random.uniform(-1,1) 
-            inputs.append((a))
+            inputs.append((a,))
             if a<0 : variables.append( -a )
             else : variables.append( a )
         assert( check_func('modulo', inputs, variables ) )
